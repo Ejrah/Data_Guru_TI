@@ -2,220 +2,126 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FORM</title>
-  <link rel="stylesheet" href="index/style.css">
-  <link rel="icon" href="aset/pplgacor.png" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&family=PT+Serif&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurusan TI</title>
+    <link rel="stylesheet" href="index/style.css">
+    <link rel="icon" href="aset/pplgacor.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&family=PT+Serif&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
-    
-  <main>
-    <div class="kuningan-container">
-      <div class="kuningan">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="width: 100%;">
-          <path fill="#ffde59" fill-opacity="1"
-            d="M0,64L18.5,90.7C36.9,117,74,171,111,192C147.7,213,185,203,222,218.7C258.5,235,295,277,332,266.7C369.2,256,406,192,443,170.7C480,149,517,171,554,160C590.8,149,628,107,665,128C701.5,149,738,235,775,240C812.3,245,849,171,886,138.7C923.1,107,960,117,997,138.7C1033.8,160,1071,192,1108,202.7C1144.6,213,1182,203,1218,213.3C1255.4,224,1292,256,1329,250.7C1366.2,245,1403,203,1422,181.3L1440,160L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z">
-          </path>
-        </svg>
-      </div>
-    </div>
-    <div class="kabangen">
-      <h1 class="kegedean">DATA PRIBADI SISWA TAHUN 2021/2022</h1>
-      <p class="abangtxt"><i>Sudahkah Anda mengisi formulir data diri?</i></p>
-    </div>
+    <h1>Data Guru SMKN 1 Pemalang</h1>
 
-    <div class="wavekuning">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="width: 100%;">
-        <path fill="#ffde59" fill-opacity="1"
-          d="M0,64L18.5,90.7C36.9,117,74,171,111,192C147.7,213,185,203,222,218.7C258.5,235,295,277,332,266.7C369.2,256,406,192,443,170.7C480,149,517,171,554,160C590.8,149,628,107,665,128C701.5,149,738,235,775,240C812.3,245,849,171,886,138.7C923.1,107,960,117,997,138.7C1033.8,160,1071,192,1108,202.7C1144.6,213,1182,203,1218,213.3C1255.4,224,1292,256,1329,250.7C1366.2,245,1403,203,1422,181.3L1440,160L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z">
-        </path>
-      </svg>
-    </div>
-  
-    <section class="content" id="about-me">
-      <div class="logo">
-        <img src="aset/smkn.png" alt="Logo" onclick="location.reload();">
-      </div>
-      <div class="form">
-        <h1>FORM</h1>
-        <form action="/submit" method="post">        
-          <div class="formx">
-            <label for="name">1. Nama:</label>
-            <input type="text" id="nama" name="nama" required><br><br>
-          </div>
-          
-          <div class="formx">
-            <label for="jenis">2. Jenis Kelamin:</label>
-            <select id="jenis" name="jenis" required>
-                <option value="" disabled selected>Pilih jenis kelamin</option>
-                <option value="laki-laki">Laki-laki</option>
-                <option value="perempuan">Perempuan</option>
-            </select><br><br>
-          </div>
-          
-          <div class="formx">
-            <label for="nis">3. Nomor Induk Siswa:</label>
-            <input type="text" id="nis" name="nis" required><br><br>
-          </div>
-          
-          <div class="formx">
-            <label for="nisn">4. Nomor Induk Siswa Nasional:</label>
-            <input type="text" id="nisn" name="nisn" required><br><br>
-          </div>
-          
-          <div class="formx">
-            <label for="kelas">5. Kelas:</label>
-            <select id="kelas" name="kelas" required>
-              <option value="" disabled selected>Pilih kelas</option>
-              <option value="10">Kelas 10</option>
-              <option value="11">Kelas 11</option>
-              <option value="12">Kelas 12</option>
-            </select><br><br>
-          </div>
-          
-          <div class="formx">
-            <label for="ttl">6. Tempat / tanggal lahir:</label>
-            <input type="text" id="ttl" name="ttl" required><br><br>
-          </div>
-          
-          <div class="formx">
-            <label for="agama">7. Agama:</label>
-            <select id="agama" name="agama" required>
-                <option value="" disabled selected>Pilih agama</option>
-                <option value="Islam">Islam</option>
-                <option value="Kristen">Kristen</option>
-                <option value="Katholik">Katholik</option>
-                <option value="Hindu">Hindu</option>
-                <option value="Buddha">Buddha</option>
-                <option value="Konghuchu">Konghucu</option>
-            </select><br><br>
-          </div>
-          
-          <div class="formx">
-            <label for="distance">8. Jarak dari rumah ke sekolah:</label>
-            <input type="number" id="distance" name="distance" required>
-            <input type="radio" id="meter" name="unit" value="meter" checked>
-            <label for="meter">Meter</label>
-            <input type="radio" id="kilometer" name="unit" value="kilometer">
-            <label for="kilometer">Kilometer</label><br><br>
-          </div>
 
-          <div class="formx">
-            <label for="transport">9. Alat Transportasi ke Sekolah:</label><br>
-            <input type="radio" id="kendaraan" name="transport" value="kendaraan">
-            <label for="kendaraan">Kendaraan</label><br>
-            <input type="radio" id="jalan_kaki" name="transport" value="jalan_kaki">
-            <label for="jalan_kaki">Jalan Kaki</label><br><br>
-        </div>
-    
-        <div class="formx">
-            <label for="school_origin">10. Asal Sekolah:</label>
-            <input type="text" id="school_origin" name="school_origin" required><br><br>
-        </div>
-    
-        <div class="formx">
-            <label for="parent_guardian">11. Tinggal dengan:</label><br>
-            <input type="radio" id="orang_tua" name="parent_guardian" value="orang_tua">
-            <label for="orang_tua">Orang Tua</label><br>
-            <input type="radio" id="wali" name="parent_guardian" value="wali">
-            <label for="wali">Wali</label><br><br>
-        </div>
-    
-        <div class="formx">
-            <label for="residence">12. Tempat Tinggal:</label><br>
-            <input type="radio" id="rumah_sendiri" name="residence" value="rumah_sendiri">
-            <label for="rumah_sendiri">Rumah Sendiri</label><br>
-            <input type="radio" id="kontrak" name="residence" value="kontrak">
-            <label for="kontrak">Kontrak</label><br><br>
-        </div>
+    <table border="1">
+        <tr>
+            <th>No. </th>
+            <th>Jurusan</th>
+            <th>Name</th>
+            <th>Jabatan</th>
+            <th>No. HP</th>
+        </tr>
+        <tr>
+            <td>1. </td>
+            <td class="tkj">TKJ</td>
+            <td>Agung Sugiarto, S.Kom.</td>
+            <td>Guru</td>
+            <td>+62 818-0398-3995</td>
+        </tr>
+        <tr>
+            <td>2. </td>
+            <td class="tkj">TKJ</td>
+            <td>Agung Wicaksono, S.Pd., M.Pd.</td>
+            <td>Guru</td>
+            <td>+62 815-7628-926</td>
+        </tr>
+        <tr>
+            <td>3. </td>
+            <td class="tkj">TKJ</td>
+            <td>Akhmad Habibi, S.Kom.</td>
+            <td>Guru</td>
+            <td>+62 857-1248-3882</td>
+        </tr>
+        <tr>
+            <td>4. </td>
+            <td class="tkj">TKJ</td>
+            <td>Andang Taufik Hidayat, S.Kom.</td>
+            <td>Guru</td>
+            <td>+62 877-3350-8502</td>
+        </tr>
+        <tr>
+            <td>5. </td>
+            <td class="tkj">TKJ</td>
+            <td>Duddy Mulyawan, S.Kom.</td>
+            <td>Guru</td>
+            <td>+62 896-1917-8203</td>
+        </tr>
+        <tr>
+            <td>6. </td>
+            <td class="tkj">TKJ</td>
+            <td>Dyah Fatwawati, S.Kom.</td>
+            <td>Ka. Program TKJ</td>
+            <td>+62 877-6470-6279</td>
+        </tr>
+        <tr>
+            <td>7. </td>
+            <td class="tkj">TKJ</td>
+            <td>Feny Nurvita Arifany, S.Kom, M.Kom.</td>
+            <td>Guru</td>
+            <td>+62 856-4006-0406</td>
+        </tr>
+        <tr>
+            <td>8. </td>
+            <td class="tkj">TKJ</td>
+            <td>Ika Widiyantika, S.Kom.</td>
+            <td>Guru</td>
+            <td>+62 813-9038-9339</td>
+        </tr>
+        <tr>
+            <td>9. </td>
+            <td class="tkj">TKJ</td>
+            <td>Suherman, S.Si.</td>
+            <td>Guru</td>
+            <td>+62 853-2574-8512</td>
+        </tr>
+        <tr>
+            <td>10. </td>
+            <td class="dkv">DKV</td>
+            <td>Irfan Maulana Fardi, S.Kom.</td>
+            <td>Guru</td>
+            <td>+62 896-2878-5342</td>
+        </tr>
+        <tr>
+            <td>11. </td>
+            <td class="dkv">DKV</td>
+            <td>Dedy Setiono, S.Pd.</td>
+            <td>Ka. Program DKV</td>
+            <td>+62 856-4044-3987</td>
+        </tr>
+        <tr>
+            <td>12. </td>
+            <td class="devita">PPLG</td>
+            <td>Devita Hermanto, S.Kom.</td>
+            <td>Guru</td>
+            <td>+62 823-2402-2220</td>
+        </tr>
+        <tr>
+            <td>13. </td>
+            <td class="pplg">PPLG</td>
+            <td>Ahmad Faisal Amin, S.Pd.</td>
+            <td>Ka. Program PPLG</td>
+            <td>+62 857-8686-3458</td>
+        </tr>
+    </table>
 
-        <p>13. Identitas Orang Tua</p>
-    
-        <!-- Data utk Ayah -->
-        <div class="formx">
-          <label for="ayah_nama">a. Nama Ayah:</label>
-          <input type="text" id="ayah_nama" name="ayah_nama" required><br><br>
-
-            <label for="ayah_agama">Agama:</label>
-            <select id="agamayah" name="agamayah" required>
-              <option value="" disabled selected>Pilih agama</option>
-              <option value="Islam">Islam</option>
-              <option value="Kristen">Kristen</option>
-              <option value="Katholik">Katholik</option>
-              <option value="Hindu">Hindu</option>
-              <option value="Buddha">Buddha</option>
-              <option value="Konghuchu">Konghucu</option>
-          </select><br><br>
-            
-            <label for="ayah_pekerjaan">Pekerjaan:</label>
-            <input type="text" id="ayah_pekerjaan" name="ayah_pekerjaan" required><br><br>
-            
-            <label for="ayah_alamat_kantor">Alamat Kantor:</label>
-            <input type="text" id="ayah_alamat_kantor" name="ayah_alamat_kantor" required><br><br>
-            
-            <label for="ayah_alamat_rumah">Alamat Rumah:</label>
-            <input type="text" id="ayah_alamat_rumah" name="ayah_alamat_rumah" required><br><br>
-            
-            <label for="ayah_no_telp">Nomor Telepon Rumah/Kantor:</label>
-            <input type="text" id="ayah_no_telp" name="ayah_no_telp" required><br><br>
-        </div>
-        
-        <!-- Data utk Ibu -->
-        <div class="formx">
-          <label for="ibu_nama">b. Nama Ibu:</label>
-          <input type="text" id="ibu_nama" name="ibu_nama" required><br><br>
-
-            <label for="ibu_nama">Agama:</label>
-            <select id="agamaibu" name="agamaibu" required>
-              <option value="" disabled selected>Pilih agama</option>
-              <option value="Islam">Islam</option>
-              <option value="Kristen">Kristen</option>
-              <option value="Katholik">Katholik</option>
-              <option value="Hindu">Hindu</option>
-              <option value="Buddha">Buddha</option>
-              <option value="Konghuchu">Konghucu</option>
-          </select><br><br>
-            
-            <label for="ibu_pekerjaan">Pekerjaan:</label>
-            <input type="text" id="ibu_pekerjaan" name="ibu_pekerjaan" required><br><br>
-            
-            <label for="ibu_alamat_kantor">Alamat Kantor:</label>
-            <input type="text" id="ibu_alamat_kantor" name="ibu_alamat_kantor" required><br><br>
-            
-            <label for="ibu_alamat_rumah">Alamat Rumah:</label>
-            <input type="text" id="ibu_alamat_rumah" name="ibu_alamat_rumah" required><br><br>
-            
-            <label for="ibu_no_telp">Nomor Telepon Rumah/Kantor:</label>
-            <input type="text" id="ibu_no_telp" name="ibu_no_telp" required><br><br>
-        </div>
-          
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </section>
-  </main>
-  <div class="formkuning">
-    <div class="kuning-container">
-      <div class="kuning">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="width: 100%;">
-          <path fill="#aa1d23" fill-opacity="1"
-            d="M0,64L18.5,90.7C36.9,117,74,171,111,192C147.7,213,185,203,222,218.7C258.5,235,295,277,332,266.7C369.2,256,406,192,443,170.7C480,149,517,171,554,160C590.8,149,628,107,665,128C701.5,149,738,235,775,240C812.3,245,849,171,886,138.7C923.1,107,960,117,997,138.7C1033.8,160,1071,192,1108,202.7C1144.6,213,1182,203,1218,213.3C1255.4,224,1292,256,1329,250.7C1366.2,245,1403,203,1422,181.3L1440,160L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z">
-          </path>
-        </svg>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <p>Made with luv by Maheswara Damar</p>
-  </footer>
-
-  <script src="index/script.js"></script>
+    <script src="index/script.js"></script>
 
 </body>
+
 </html>
