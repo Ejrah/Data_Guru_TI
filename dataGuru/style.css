@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  margin: 0;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fedbf8;
+}
+
+h1 {
+  color: #333;
+  text-shadow: 10px 5px rgba(189, 10, 162, 0.2);
+}
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #ff80df;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+  background-color: #dcdcdc;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
