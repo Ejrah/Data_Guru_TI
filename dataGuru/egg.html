@@ -7,7 +7,6 @@
   <title>Mau Masuk Nepal?</title>
   <link rel="icon" href="../aset/IMG_20240607_103969.png" type="image/png">
   <style>
-
     body {
       background-color: #f5f5f5;
       font-family: Arial, sans-serif;
@@ -27,9 +26,9 @@
     }
 
     .image {
-      max-width: 100%; 
-      max-height: 400px;
-      height: auto; 
+      max-width: 100%; /* Ensure the image does not exceed its container width */
+      max-height: 400px; /* Set a maximum height for the image */
+      height: auto; /* Maintain aspect ratio */
     }
 
     .question {
@@ -54,7 +53,6 @@
       background-color: #FF3217;
     }
 
-
     .answer-yes {
       background-color: #58D68D;
       color: white;
@@ -73,13 +71,21 @@
 
     @media only screen and (max-width: 600px) {
       .image {
-        width: 100%;
-        max-width: none;
-
+        max-width: 80%; /* Make the image 80% of the viewport width */
+        max-height: auto; /* Allow the height to adjust accordingly */
       }
 
-      .answer-container {
-        flex-direction: column;
+      .question {
+        font-size: 20px; /* Adjust the font size of the question for smaller screens */
+      }
+
+      .answer-button {
+        font-size: 16px; /* Adjust the font size of answer buttons for smaller screens */
+      }
+
+      .answer-no,
+      .answer-yes {
+        padding: 8px; /* Adjust button padding for smaller screens */
       }
     }
   </style>
@@ -87,7 +93,7 @@
 
 <body>
   <div class="content-container">
-      <img class="image" src="../aset/smkn.png" alt="Default Image">
+    <img class="image" src="../aset/smkn.png" alt="Default Image">
     <div class="question">TERTARIK BUAT MASUK NEPAL KAH??</div>
   </div>
   <div class="answer-container">
