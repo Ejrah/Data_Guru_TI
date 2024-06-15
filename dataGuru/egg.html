@@ -5,113 +5,102 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mau Masuk Nepal?</title>
-        <link rel="icon" href="../aset/IMG_20240607_103969.png" type="image/png">
-      <style>
-        /* Base styling for the page */
-        body {
-          background-color: #f5f5f5;
-          font-family: Arial, sans-serif;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          margin: 0;
-        }
+  <link rel="icon" href="../aset/IMG_20240607_103969.png" type="image/png">
+  <style>
+    /* Base styling for the page */
+    body {
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
 
-        /* Centering container for image and question */
-        .content-container {
-          text-align: center;
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+    /* Centering container for image and question */
+    .content-container {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-        .image {
-          width: 470px;
-          height: auto;
-        }
+    .image {
+      width: 470px;
+      height: auto;
+    }
 
-        /* Styling for the question */
-        .question {
-          font-size: 24px;
-          margin-top: 20px;
-        }
+    /* Styling for the question */
+    .question {
+      font-size: 24px;
+      margin-top: 20px;
+    }
 
-        /* Styling for answer buttons */
-        .answer-button {
-          padding: 10px;
-          font-size: 18px;
-          border: 1px solid #000;
-          cursor: pointer;
-          margin: 5px;
-          /* Add margin for spacing */
-          position: absolute;
-        }
+    /* Styling for answer buttons */
+    .answer-button {
+      padding: 10px;
+      font-size: 18px;
+      border: 1px solid #000;
+      cursor: pointer;
+      margin: 5px;
+    }
 
-        /* 'No' button styling */
-        .answer-no {
-          background-color: #FF5733;
-          color: white;
-        }
+    /* 'No' button styling */
+    .answer-no {
+      background-color: #FF5733;
+      color: white;
+    }
 
-        .answer-no:hover {
-          background-color: #FF3217;
-        }
+    .answer-no:hover {
+      background-color: #FF3217;
+    }
 
-        /* 'Yes' button styling */
-        .answer-yes {
-          background-color: #58D68D;
-          color: white;
-        }
+    /* 'Yes' button styling */
+    .answer-yes {
+      background-color: #58D68D;
+      color: white;
+    }
 
-        .answer-yes:hover {
-          background-color: #3CB371;
-        }
+    .answer-yes:hover {
+      background-color: #3CB371;
+    }
 
-        /* Container for answer buttons */
-        .answer-container {
-          display: flex;
-          flex-direction: row;
-        }
+    /* Container for answer buttons */
+    .answer-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
 
-        /* Initially position 'No' button next to 'Yes' button */
-        .answer-no {
-          left: 220px;
-          /* Adjust the position as needed */
-          top: 0;
-        }
+    @media only screen and (max-width: 600px) {
+      .image {
+        width: 100%;
+        /* Membuat gambar mengisi lebar layar */
+        max-width: none;
+        /* Menghapus batasan maksimum lebar */
+      }
 
-        @media only screen and (max-width: 600px) {
-          .image {
-            width: 100%;
-            /* Membuat gambar mengisi lebar layar */
-            max-width: none;
-            /* Menghapus batasan maksimum lebar */
-          }
-
-          .answer-container {
-            flex-direction: column;
-            /* Mengubah arah flex container ke kolom */
-          }
-
-          /* Menyesuaikan posisi awal 'No' button untuk perangkat seluler */
-          .answer-no {
-            left: 0;
-            top: 5px;
-          }
-        }
-      </style>
+      .answer-container {
+        flex-direction: column;
+        /* Mengubah arah flex container ke kolom */
+      }
+    }
+  </style>
 </head>
 
 <body>
   <div class="content-container">
-    <img class="image" src="../aset/smkn.png" alt="Default Image">
-    <div class="question">    TERTARIK BUAT MASUK NEPAL KAH??</div>
+    <a href="egg.html">
+      <img class="image" src="../aset/smkn.png" alt="Default Image">
+    </a>
+    <div class="question">TERTARIK BUAT MASUK NEPAL KAH??</div>
   </div>
   <div class="answer-container">
-    <div class="answer-button answer-yes" id="yes">Yes</div>
     <div class="answer-button answer-no" id="no">No</div>
+    <div class="answer-button answer-yes" id="yes">Yes</div>
   </div>
 
   <script>
@@ -123,41 +112,40 @@
 
     function moveNoButton() {
       if (!noButtonClicked) {
-        const maxX = yesButton.offsetLeft - noButton.clientWidth;
+        const maxX = window.innerWidth - noButton.clientWidth;
         const maxY = window.innerHeight - noButton.clientHeight;
         const newX = Math.random() * maxX;
         const newY = Math.random() * maxY;
 
-        noButton.style.left = newX + "px";
-        noButton.style.top = newY + "px";
+        noButton.style.position = 'absolute';
+        noButton.style.left = newX + 'px';
+        noButton.style.top = newY + 'px';
       }
     }
 
-    noButton.addEventListener("mouseover", () => {
+    noButton.addEventListener('mouseover', () => {
       moveNoButton();
     });
 
-    noButton.addEventListener("click", () => {
+    noButton.addEventListener('click', () => {
       if (!noButtonClicked) {
         noButtonClicked = true;
-        question.innerText = "kok nolak sih?";
-        noButton.style.backgroundColor = "#FF5733";
-        noButton.style.color = "white";
-        noButton.style.fontSize = "24px";
+        question.innerText = 'kok nolak sih?';
+        noButton.style.backgroundColor = '#FF5733';
+        noButton.style.color = 'white';
+        noButton.style.fontSize = '24px';
       }
     });
 
-    yesButton.addEventListener("click", () => {
-      question.innerText = "SEMOGA KETERIMA YA!";
-      yesButton.style.backgroundColor = "#58D68D";
-      yesButton.style.color = "white";
-      yesButton.style.fontSize = "24px";
+    yesButton.addEventListener('click', () => {
+      question.innerText = 'SEMOGA KETERIMA YA!';
+      yesButton.style.backgroundColor = '#58D68D';
+      yesButton.style.color = 'white';
+      yesButton.style.fontSize = '24px';
 
       // Change the image when "Yes" is clicked
-      image.src = "../aset/smkn.png";
+      image.src = '../aset/smkn.png';
     });
-
-    moveNoButton(); // Initial random position
   </script>
 </body>
 
