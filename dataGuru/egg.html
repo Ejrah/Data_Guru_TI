@@ -28,9 +28,10 @@
     }
 
     .image {
-      width: 470px;
-      height: auto;
-    }
+        max-width: 100%; /* Ensure the image does not exceed its container width */
+        max-height: 400px; /* Set a maximum height for the image */
+        height: auto; /* Maintain aspect ratio */
+      }
 
     /* Styling for the question */
     .question {
